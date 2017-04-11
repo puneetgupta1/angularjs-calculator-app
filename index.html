@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="CalculatorApp">
+	<head>
+		<title>Calculator App</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.js"></script>
+		<script src='app.js'></script>
+	</head>
+	<body ng-controller="CalculatorCtrl">
+		<div>
+			<h1>Calculator App</h1>
+			<p>
+				<span><input type="number" ng-model="firstNumber"></input></span>
+				<span><input type="number" ng-model="secondNumber"></input></span>
+				<span> = {{ result }}</span>
+			</p>
+			<p>
+				Choose Operation: 
+					<span><button ng-click="add()">+</button></span>
+					<span><button ng-click="subtract()">-</button></span>
+					<span><button ng-click="multiply()">*</button></span>
+					<span><button ng-click="divide()">/</button></span>
+			</p>
+		</div>
+	</body>
+</html>
